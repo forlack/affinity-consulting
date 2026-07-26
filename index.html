@@ -641,8 +641,7 @@
       grid-template-columns: 1fr;
       max-width: 880px;
       margin: 0 auto;
-      background: var(--paper-strong);
-      box-shadow: var(--shadow);
+      background: transparent;
     }
 
     .offer-copy {
@@ -651,6 +650,7 @@
 
     .offer-copy h2 {
       margin: 0;
+      color: white;
       font-size: clamp(40px, 4vw, 62px);
       line-height: 1.02;
       letter-spacing: -.06em;
@@ -659,7 +659,7 @@
 
     .offer-copy > p:not(.eyebrow) {
       margin: 24px 0 32px;
-      color: var(--ink-soft);
+      color: var(--night-soft);
     }
 
     .offer-meta {
@@ -667,18 +667,18 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 1px;
       margin: 38px 0;
-      border: 1px solid var(--line);
-      background: var(--line);
+      border: 1px solid rgb(255 255 255 / 18%);
+      background: rgb(255 255 255 / 18%);
     }
 
     .offer-meta div {
       padding: 17px;
-      background: #f4f3ef;
+      background: var(--night-raised);
     }
 
     .offer-meta span {
       display: block;
-      color: #829195;
+      color: var(--night-soft);
       font-size: 9px;
       font-weight: 850;
       letter-spacing: .11em;
@@ -688,6 +688,7 @@
     .offer-meta strong {
       display: block;
       margin-top: 5px;
+      color: white;
       font-size: 14px;
     }
 
