@@ -638,15 +638,15 @@
 
     .offer-card {
       display: grid;
-      grid-template-columns: .92fr 1.08fr;
-      min-height: 640px;
+      grid-template-columns: 1fr;
+      max-width: 880px;
+      margin: 0 auto;
       background: var(--paper-strong);
       box-shadow: var(--shadow);
     }
 
     .offer-copy {
       padding: 50px 50px;
-      border-right: 1px solid var(--line);
     }
 
     .offer-copy h2 {
@@ -689,52 +689,6 @@
       display: block;
       margin-top: 5px;
       font-size: 14px;
-    }
-
-    .deliverables {
-      padding: 50px;
-      background: #f4f5f1;
-    }
-
-    .deliverables > p {
-      margin: 0 0 22px;
-      color: #77898c;
-      font-size: 11px;
-      font-weight: 850;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-    }
-
-    .deliverable {
-      display: grid;
-      grid-template-columns: 34px 1fr;
-      gap: 14px;
-      align-items: start;
-      padding: 17px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .check {
-      width: 24px;
-      height: 24px;
-      display: grid;
-      place-items: center;
-      background: var(--night);
-      color: white;
-      font-size: 11px;
-      font-weight: 900;
-    }
-
-    .deliverable strong {
-      display: block;
-      font-size: 15px;
-    }
-
-    .deliverable span {
-      display: block;
-      margin-top: 3px;
-      color: #6e8084;
-      font-size: 12px;
     }
 
     .fit {
@@ -1113,8 +1067,7 @@
         font-size: 23px;
       }
 
-      .offer-copy,
-      .deliverables {
+      .offer-copy {
         padding: 34px 20px;
       }
 
@@ -1125,12 +1078,6 @@
 
       .offer-meta div {
         padding: 14px;
-      }
-
-      .deliverable {
-        grid-template-columns: 30px 1fr;
-        gap: 12px;
-        padding: 14px 0;
       }
 
       .fit-grid,
@@ -1379,33 +1326,6 @@
               <div><span>Next step</span><strong>A straight answer</strong></div>
             </div>
             <a class="button" href="#contact">Start your free AI assessment <span class="arrow">→</span></a>
-          </div>
-          <div class="deliverables">
-            <p>What we cover on the call</p>
-            <div class="deliverable">
-              <span class="check">✓</span>
-              <div><strong>Walk through the real week</strong><span>Identify repeated work, owner dependencies, delays, and the systems involved.</span></div>
-            </div>
-            <div class="deliverable">
-              <span class="check">✓</span>
-              <div><strong>Estimate the time involved</strong><span>Use how often the task happens and how long it takes to estimate the hours and business impact.</span></div>
-            </div>
-            <div class="deliverable">
-              <span class="check">✓</span>
-              <div><strong>Choose one place to start</strong><span>Pick a process that matters and can be improved without a major system change.</span></div>
-            </div>
-            <div class="deliverable">
-              <span class="check">✓</span>
-              <div><strong>Get a short written summary</strong><span>See the proposed change, cost range, expected result, and what your team will still handle.</span></div>
-            </div>
-            <div class="deliverable">
-              <span class="check">✓</span>
-              <div><strong>Optional $3K to $6K project</strong><span>A two-to-four-week project to build, test, document, and launch the workflow.</span></div>
-            </div>
-            <div class="deliverable">
-              <span class="check">✓</span>
-              <div><strong>Training and handoff</strong><span>Your team knows how to run the workflow, handle exceptions, and measure the result.</span></div>
-            </div>
           </div>
         </article>
       </div>
