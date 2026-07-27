@@ -324,14 +324,15 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 0;
-      margin-top: 28px;
+      margin-top: 24px;
       border: 1px solid var(--line);
+      background: #f7f7f3;
     }
 
     .engagement-step {
       position: relative;
       min-height: 178px;
-      padding: 18px 16px;
+      padding: 20px 16px 22px;
       background: #f7f7f3;
     }
 
@@ -339,27 +340,10 @@
       border-left: 1px solid var(--line);
     }
 
-    .engagement-step:not(:last-child)::after {
-      content: "→";
-      position: absolute;
-      z-index: 2;
-      width: 24px;
-      height: 24px;
-      display: grid;
-      right: -12px;
-      top: 28px;
-      place-items: center;
-      border: 1px solid var(--line);
-      background: white;
-      color: var(--coral);
-      font-size: 12px;
-      font-weight: 900;
-    }
-
     .step-symbol {
       content: "";
-      width: 34px;
-      height: 34px;
+      width: 38px;
+      height: 38px;
       display: grid;
       place-items: center;
       background: var(--night);
@@ -373,8 +357,9 @@
     }
 
     .engagement-step h3 {
-      margin: 30px 0 8px;
+      margin: 24px 0 9px;
       font-size: 14px;
+      line-height: 1.2;
     }
 
     .engagement-step p {
@@ -391,8 +376,8 @@
       grid-template-columns: auto 1fr;
       gap: 14px;
       align-items: center;
-      margin-top: 16px;
-      padding: 15px;
+      margin-top: 12px;
+      padding: 14px 16px;
       background: var(--night);
       color: white;
     }
@@ -1124,15 +1109,8 @@
         border-left: 0;
       }
 
-      .engagement-step:not(:last-child)::after {
-        content: "↓";
-        right: 20px;
-        top: auto;
-        bottom: -12px;
-      }
-
       .engagement-step h3 {
-        margin: 18px 0 6px;
+        margin: 16px 0 6px;
       }
 
       .custom-plan {
