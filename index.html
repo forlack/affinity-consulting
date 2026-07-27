@@ -614,7 +614,7 @@
     }
 
     .approach-section {
-      padding: 84px 0;
+      padding: 70px 0;
       overflow: hidden;
       background: var(--paper-strong);
       color: var(--ink);
@@ -624,39 +624,43 @@
       color: var(--coral);
     }
 
-    .approach-section h2 {
-      max-width: 760px;
+    .approach-header {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, .65fr);
+      gap: 72px;
+      align-items: end;
+      margin-bottom: 38px;
     }
 
-    .process-grid {
-      display: grid;
-      grid-template-columns: .85fr 1.45fr;
-      gap: 80px;
-      align-items: start;
-      margin-top: 44px;
+    .approach-section h2 {
+      max-width: 720px;
     }
 
     .process-intro {
-      position: sticky;
-      top: 110px;
+      padding-bottom: 2px;
     }
 
     .process-intro p {
-      max-width: 390px;
-      margin: 24px 0 32px;
+      max-width: 430px;
+      margin: 0 0 24px;
       color: var(--ink-soft);
+      font-size: 16px;
     }
 
     .process-steps {
-      border-top: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border: 1px solid var(--line);
     }
 
     .process-step {
-      display: grid;
-      grid-template-columns: 70px 1fr;
-      gap: 22px;
-      padding: 29px 0;
-      border-bottom: 1px solid var(--line);
+      min-height: 240px;
+      padding: 28px;
+      background: #faf9f5;
+    }
+
+    .process-step + .process-step {
+      border-left: 1px solid var(--line);
     }
 
     .process-step .number {
@@ -667,16 +671,17 @@
     }
 
     .process-step h3 {
-      margin: 0 0 10px;
-      font-size: 26px;
+      margin: 38px 0 12px;
+      font-size: 24px;
+      line-height: 1.12;
       letter-spacing: -.035em;
     }
 
     .process-step p {
-      max-width: 590px;
       margin: 0;
       color: var(--ink-soft);
-      font-size: 15px;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
     .offer {
@@ -953,13 +958,13 @@
         border-bottom: 1px solid rgb(255 255 255 / 18%);
       }
 
-      .process-grid {
+      .approach-header {
         grid-template-columns: 1fr;
-        gap: 45px;
+        gap: 24px;
       }
 
-      .process-intro {
-        position: static;
+      .process-intro p {
+        max-width: 680px;
       }
 
       .trust-inner {
@@ -1123,6 +1128,24 @@
         grid-template-columns: 1fr;
       }
 
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .process-step {
+        min-height: 0;
+        padding: 24px;
+      }
+
+      .process-step + .process-step {
+        border-top: 1px solid var(--line);
+        border-left: 0;
+      }
+
+      .process-step h3 {
+        margin-top: 24px;
+      }
+
       .example-workflow {
         grid-template-columns: 1fr;
         gap: 14px;
@@ -1169,12 +1192,11 @@
       }
 
       .process-step {
-        grid-template-columns: 36px 1fr;
-        gap: 12px;
-        padding: 24px 0;
+        padding: 22px;
       }
 
       .process-step h3 {
+        margin-top: 22px;
         font-size: 23px;
       }
 
@@ -1406,36 +1428,32 @@
 
     <section class="approach-section" id="approach">
       <div class="shell">
-        <p class="eyebrow">Three reasons businesses call Affinity</p>
-        <h2>Start with the problem you already feel.</h2>
-        <div class="process-grid">
+        <div class="approach-header">
+          <div>
+            <p class="eyebrow">Three reasons businesses call Affinity</p>
+            <h2>Start with the problem you already feel.</h2>
+          </div>
           <div class="process-intro">
             <p>Every project starts the same way. We learn how the work gets done, pick the best place to start, build the improvement with your team, and track what changed.</p>
             <a class="button" href="#contact">Start your free AI assessment <span class="arrow">→</span></a>
           </div>
-          <div class="process-steps">
-            <article class="process-step">
-              <span class="number">01</span>
-              <div>
-                <h3>“We are falling behind.”</h3>
-                <p><strong>AI Capability Upgrade.</strong> Train employees to use today's AI tools safely and effectively in their daily work. We set up useful examples by role and agree on simple rules for safe use.</p>
-              </div>
-            </article>
-            <article class="process-step">
-              <span class="number">02</span>
-              <div>
-                <h3>“We are wasting too much time.”</h3>
-                <p><strong>Time-Back Workflow Automation.</strong> Find the repeated work, fix one important process, add automation, train the team, and count the hours saved.</p>
-              </div>
-            </article>
-            <article class="process-step">
-              <span class="number">03</span>
-              <div>
-                <h3>“We cannot see what is happening.”</h3>
-                <p><strong>Revenue Visibility and Conversion.</strong> See where leads come from, where they get lost, how quickly the team responds, and what converts demand into profitable customers.</p>
-              </div>
-            </article>
-          </div>
+        </div>
+        <div class="process-steps">
+          <article class="process-step">
+            <span class="number">01</span>
+            <h3>“We are falling behind.”</h3>
+            <p><strong>AI Capability Upgrade.</strong> Train employees to use today's AI tools safely and effectively in their daily work. We set up useful examples by role and agree on simple rules for safe use.</p>
+          </article>
+          <article class="process-step">
+            <span class="number">02</span>
+            <h3>“We are wasting too much time.”</h3>
+            <p><strong>Time-Back Workflow Automation.</strong> Find the repeated work, fix one important process, add automation, train the team, and count the hours saved.</p>
+          </article>
+          <article class="process-step">
+            <span class="number">03</span>
+            <h3>“We cannot see what is happening.”</h3>
+            <p><strong>Revenue Visibility and Conversion.</strong> See where leads come from, where they get lost, how quickly the team responds, and what converts demand into profitable customers.</p>
+          </article>
         </div>
       </div>
     </section>
