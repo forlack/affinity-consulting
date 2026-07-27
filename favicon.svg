@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Affinity">
+  <path d="M32 3 61 32 32 61 3 32Z" fill="#0b282e"/>
+  <text
+    x="32"
+    y="43"
+    fill="#ff4f3f"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="36"
+    font-weight="800"
+    text-anchor="middle"
+  >a</text>
+</svg>
