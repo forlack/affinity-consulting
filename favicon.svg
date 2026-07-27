@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Affinity">
-  <path d="M32 0 64 32 32 64 0 32Z" fill="#0b282e"/>
+  <rect width="64" height="64" rx="8" fill="#252a2c"/>
   <text
     x="32"
-    y="46"
+    y="53"
     fill="#ff4f3f"
     font-family="Arial, Helvetica, sans-serif"
-    font-size="42"
+    font-size="56"
     font-weight="800"
     text-anchor="middle"
   >a</text>
