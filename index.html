@@ -685,7 +685,7 @@
     }
 
     .offer {
-      padding: 84px 0;
+      padding: 68px 0;
       background: var(--night);
     }
 
@@ -696,7 +696,7 @@
     }
 
     .offer-copy {
-      padding: 50px 50px;
+      padding: 42px 44px;
       border-right: 1px solid rgb(255 255 255 / 18%);
     }
 
@@ -710,7 +710,7 @@
     }
 
     .offer-copy > p:not(.eyebrow) {
-      margin: 24px 0 32px;
+      margin: 20px 0 28px;
       color: var(--night-soft);
     }
 
@@ -718,7 +718,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1px;
-      margin: 38px 0;
+      margin: 30px 0;
       border: 1px solid rgb(255 255 255 / 18%);
       background: rgb(255 255 255 / 18%);
     }
@@ -747,13 +747,13 @@
     .offer-summary {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding: 50px;
+      justify-content: flex-start;
+      padding: 40px 44px;
       background: var(--night-raised);
     }
 
     .offer-summary > p {
-      margin: 0 0 18px;
+      margin: 0 0 12px;
       color: var(--night-soft);
       font-size: 11px;
       font-weight: 850;
@@ -766,7 +766,7 @@
       grid-template-columns: 26px 1fr;
       gap: 14px;
       align-items: start;
-      padding: 19px 0;
+      padding: 15px 0;
       border-bottom: 1px solid rgb(255 255 255 / 14%);
     }
 
@@ -1209,7 +1209,7 @@
       }
 
       .offer-meta {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         margin: 30px 0;
       }
 
@@ -1474,10 +1474,18 @@
             <a class="button" href="#contact">Start your free AI assessment <span class="arrow">→</span></a>
           </div>
           <div class="offer-summary">
-            <p>A useful first conversation</p>
+            <p>What we will cover</p>
+            <div class="summary-item">
+              <span class="summary-check">✓</span>
+              <div><strong>Where the time goes</strong><span>Walk through the repeated work, delays, and decisions that shape a normal week.</span></div>
+            </div>
             <div class="summary-item">
               <span class="summary-check">✓</span>
               <div><strong>One workflow to explore</strong><span>Identify the process most worth a closer look.</span></div>
+            </div>
+            <div class="summary-item">
+              <span class="summary-check">✓</span>
+              <div><strong>People and systems involved</strong><span>Clarify who owns the work, where information lives, and where handoffs break.</span></div>
             </div>
             <div class="summary-item">
               <span class="summary-check">✓</span>
